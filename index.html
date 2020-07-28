@@ -4,16 +4,19 @@
     <!--name="viewport" content="width=device-width, initial-scale=1"-->
     <meta charset="utf-8">
     <title>Great Delivery Food</title>
-    <link rel="stylesheet" href="mystyle.css" type="text/css">
     <link rel="stylesheet" href="slide_menu.css">
     <link href="https://fonts.google.com/specimen/Roboto+Condensed?sidebar.open&selection.family=Roboto+Condensed:ital,wght@0,300;1,400" rel="stylesheet">
+    <!-- The following link Just to incluse Bootstrap CSS in this file
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
   </head>
 
 <body>
- <header>
-   <span id="spamestilo"  onclick="openNav()">&#9776; Menu</span>
+ <div class="cabeza">
+   <span id="spamestilo"  onclick="openNav()"> &#9776;Menu</span>
    <h1> The Best Food At Your Door</h1>
-   <img class="porta" src="Logo.JPG" alt="Logo">
+   <img id="porta" src="Logo.JPG" alt="komilon.com Logo">
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -23,37 +26,49 @@
           <a href="#">Contact Us</a>
         </div>
       </div>
-   </header>
-   <div id="presentation">
-            <img src="portada.jpg" alt="background">
+   </div>
+   <div class="presentation">
+      <div class="buffer col-12"></div>
+      <div class="input-group input-group-lg input-pos">
+           <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Login</span>
+            </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+      </div>
    </div>
    <div id="titulo">
-      <h1>More Pizzas.</h1>
+      <h1>Pizza.</h1>
    </div>
-   <div id="menu1">
-      <img src="pizza01.JPG" alt="pizza">
-      <img src="pizza02.JPG" alt="my pizza">
-      <img src="pizza03.JPG" alt="mas pizza">
-      <img src="pizza04.JPG" alt="nice pizza">
-      <img src="pizza05.JPG" alt="mas pizza">
-      <img src="pizza06.JPG" alt="rich pizza">
+   <div class="menu1">
+      <img class="imagen" src="pizza01.JPG" alt="pizza">
+      <img class="imagen" src="pizza02.JPG" alt="my pizza">
+      <img class="imagen" src="pizza03.JPG" alt="mas pizza">
+      <img class="imagen" src="pizza04.JPG" alt="nice pizza">
+      <img class="imagen" src="pizza05.JPG" alt="mas pizza">
+      <img class="imagen" src="pizza06.JPG" alt="rich pizza">
    </div>
    <div id="menu2">
-      <span>Groceries</span>
-      <span>Deliveries</span>
-      <span>Services</span>
-      <span>Traditional</span>
-      <span>Italian</span>
-      <span>Spanish</span>
-      <span>Convenient</span>
-      <span>Drinks</span>
-      <span>Deserts</span>
+      <button type="button" class="btn btn-primary btn-lg opc2">Groceries</button>
+      <button type="button" class="btn btn-secondary btn-lg opc2">Deliveries</button>
+      <button type="button" class="btn btn-success btn-lg opc2">Services</button>
+      <button type="button" class="btn btn-danger btn-lg opc2">Traditional</button>
+      <button type="button" class="btn btn-warning btn-lg opc2">Italian</button>
+      <button type="button" class="btn btn-info btn-lg opc2">Spanish</button>
+      <button type="button" class="btn btn-light btn-lg opc2">Convenient</button>
+      <button type="button" class="btn btn-dark btn-lg opc2">Drinks</button>
+      <button type="button" class="btn btn-info btn-lg opc2">Deserts</button>
    </div>
-   <footer>
-      <span>Contact Us</span><br>
-      <span>About Us</span><br>
-      <span>Legislation</span>
-   </footer>
+   <div class="foot1">
+      <button type="button" class="btn btn-primary btn-lg btn-block">Contact Us</button>
+      <button type="button" class="btn btn-success btn-lg btn-block">About Us</button>
+      <button type="button" class="btn btn-danger btn-lg btn-block">Legislation</button>
+      <button type="button" class="btn btn-warning btn-lg btn-block">Help</button>
+   </div>
+   <div class="foot2">
+      <p>Beakman's World Software</p>
+   </div>
+
+
     <script>
     function openNav() {
       document.getElementById("myNav").style.width = "20%";
@@ -63,6 +78,9 @@
       document.getElementById("myNav").style.width = "0%";
     }
     </script>
-
+<!-- Bootstrap JS to include funcionality in the project-->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
